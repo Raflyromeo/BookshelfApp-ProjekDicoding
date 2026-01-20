@@ -103,11 +103,11 @@ function renderBooks(filterQuery = "") {
 
   if (incompleteList.innerHTML === "") {
     incompleteList.innerHTML =
-      '<div class="empty-message">Tidak ada buku di rak ini.</div>';
+      '<div class="empty-message">Belum ada buku yang tersimpan di rak ini.</div>';
   }
   if (completeList.innerHTML === "") {
     completeList.innerHTML =
-      '<div class="empty-message">Tidak ada buku di rak ini.</div>';
+      '<div class="empty-message">Belum ada buku yang tersimpan di rak ini.</div>';
   }
 }
 
@@ -189,5 +189,5 @@ function startEditBook(book) {
 function resetForm() {
   isEditing = false;
   editingId = null;
-  document.getElementById("formTitle").innerText = "Tambah Buku Baru";
+  document.getElementById("formTitle").innerText = "Masukkan Buku Baru";
 }
